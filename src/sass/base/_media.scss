@@ -1,0 +1,122 @@
+@media (max-width: 991px) {
+    .promo {
+        padding: 25px;
+        width: 100%;
+    }
+    .advantage {
+        width: 100%;
+        padding: 25px;
+        &__wrapper {
+            max-width: 100%;
+        }
+        &__item {
+            max-width: 33%;
+        }
+        &__desc {
+            max-width: 100%;
+        }
+    }
+}
+@media (max-width: 767px) {
+    .advantage {
+    &__wrapper {
+        margin-top: 35px;
+        }
+    }
+    .header {
+        &__phone {
+            font-size: 15px;
+        }
+        &__logo {
+            width: 35%;
+            img {
+               width: 80%;
+            }
+        }
+    }
+}
+    
+@media (max-width: 576px) {
+    .header {
+        &__phone {
+            font-size: 15px;
+        }
+        &__logo {
+            width: 33%;
+        }
+        &__official {
+            width: 33%;
+        }
+        &__official {
+            font-size: 10px;
+            span {
+                font-size: 12px;
+                margin-top: 10px;
+            }
+        }
+    }
+    .promo {
+        &__header {
+            font-size: 30px;
+        }
+        &__subheader {
+            font-size: 18px;    
+        }
+        &__icons {
+            width: 65%;
+        }
+    }
+}
+@media (max-width: 420px) {
+    .header {
+        &__phone {
+            font-size: 12px;
+        }
+        &__logo {
+            width: 33%;
+            img {
+                width: 100%;
+             }
+        }
+        &__official {
+            width: 33%;
+        }
+        &__official {
+            font-size: 8px;
+            span {
+                font-size: 10px;
+                margin-top: 7px;
+            }
+        }
+    }
+    .promo {
+        &__header {
+            font-size: 23px;
+        }
+        &__subheader {
+            font-size: 13px;    
+        }
+        &__icons {
+            width: 100%;
+        }
+    };
+    .button {
+        width: 120px;
+        height: 30px;
+        font-size: 8px;
+    }
+    .advantage {
+        &__title {
+            font-size: 23px;
+        }
+        &__wrapper {
+            margin-top: 17px;
+            flex-direction: column;
+
+        }
+        &__item {
+            max-width: 100%;
+        }
+        
+    }
+}
