@@ -24,7 +24,18 @@ const slider = tns({
     items: 1,
     slideBy: 'page',
     autoplay: false,
-    controlsText: [
-      '<img src="img/icons/left-solid.png" alt="">','<img src="img/icons/right-solid.png" alt="">'
-    ]
+    controlsText: ['<img src="img/icons/left-solid.png" alt="">','<img src="img/icons/right-solid.png" alt="">'],
+    responsive: {
+      320: {
+        controls: false,
+        touch: true,
+      },
+      700: {
+        controls: false,
+        touch: true,
+      },
+      900: {
+        controls: true,      }
+    }
   });
+
