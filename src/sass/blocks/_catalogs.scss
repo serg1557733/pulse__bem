@@ -40,6 +40,13 @@
     }
     &__content {
         margin-top: 57px;
+        display: none;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        &_active {
+            display: flex;
+        }
+        
     }
     &-item {
         padding: 20px 18px 20px 23px;
@@ -49,6 +56,7 @@
         box-sizing: border-box;
         text-align: center;
         overflow: hidden;
+        margin-bottom: 20px;
         img {
             max-width: 100%;
             height: 200px;
@@ -75,13 +83,13 @@
         &__link {
             font-weight: 500;
             font-size: 14px;
-            line-height: 14px;
+            line-height: 34px;
             text-decoration-line: underline;
             color:$main_color;
             &:hover {
                 color:$main_color;
                 cursor: pointer;
-            }    
+            }   
         }
         hr {
             background: #E8E8E8;
@@ -123,25 +131,54 @@
         &__content {
             width: 50%;
             margin-right: 0px;
-            transform: translateX(-100%);
-            transition: 0.5s all;
+            transform: translateX(-110%);
+            transition: 0.5s all;         
             &_active {
                 margin-right: 20px;
                 transform: translateX(0%); 
             }
+        }
+        &__back {
+            display: block;
+            font-weight: 500;
+            font-size: 14px;
+            text-align: center;
+            text-decoration-line: underline;
+            color: $main_color;
+            margin-top: 97px;
+            margin-left: -34px;
         }
         &__list {
             width: 50%;
             margin-left: 20px;
             transform: translateX(0%);
             margin-bottom: 0;
-            padding-left: 0;
+            padding-left: 18px;
+            padding-right: 15px;
             transition: 0.5s all;
-            list-style: none;    
+            list-style: none;
+            text-align: left;
+            position: relative;   
             &_active {
                 margin-left: 0px;
                 transform: translateX(-100%); 
-            }  
+            }
+            li {
+                position: relative;
+                font-weight: 300;
+                font-size: 14px;
+                color: #555555;
+                margin-bottom: 4px;
+                &::before {
+                    content:'';
+                    position: absolute;
+                    width: 8px;
+                    height: 7px;
+                    left: -19px;
+                    top: 6px;
+                    background: $main_color;
+                }
+            }
         }
     }     
 }      
