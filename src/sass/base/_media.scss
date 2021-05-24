@@ -137,6 +137,23 @@
     .feed-form {
         margin: 0 auto;
     }
+    .footer {
+        &__contacts {
+            width: 280px;
+            height: 170px;
+        }
+        &__phone {
+            
+            font-size: 15px;
+        }
+        &__adress {
+            margin-top: 10px;
+            font-size: 15px;
+        }
+        &__social {
+            margin-top: 10px;
+        }
+    }
 }
 @media (max-width: 420px) {
     .header {
