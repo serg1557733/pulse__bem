@@ -96,7 +96,7 @@
                  вам в течении 10 минут
             </div>
             <form  class="feed-form" action="#">
-                <input name="name" required type="text" placeholder="Ваше имя">
+                <input name="name" required minlength="2" type="text" placeholder="Ваше имя">
                 <input name="phone" required type="number" placeholder="Ваш телефон">
                 <input name="email" required type="email" placeholder="Ваш E-mail">
                 <button class="button button_subbmit">заказать кОНСУЛЬТАЦИЮ</button>
@@ -471,7 +471,36 @@
         </div>
     </footer>
 
+<div class="overlay">
+    <div class="modal" id="consultation">
+        <div class="modal__close">&times;</div>
+        <div class="modal__subtitle">Просто заполните форму заявки</div>
+        <div class="modal__desc">и мы перезвоним вам в течении 10 минут</div>
+        <form  class="feed-form feed-form_modal" action="#">
+            <input name="name" required minlength="2" type="text" placeholder="Ваше имя">
+            <input name="phone" required type="number" placeholder="Ваш телефон">
+            <input name="email" required type="email" placeholder="Ваш E-mail">
+            <button class="button button_subbmit">заказать кОНСУЛЬТАЦИЮ</button>
+        </form>
+    </div>
+    <div class="modal" id="order" >
+        <div class="modal__close">&times;</div>
+        <div class="modal__subtitle">Ваш заказ:</div>
+        <div class="modal__desc">Пульсометр Polar FT1</div>
+        <form  class="feed-form feed-form_modal" action="#">
+            <input name="name" required minlength="2" type="text" placeholder="Ваше имя">
+            <input name="phone" required type="number" placeholder="Ваш телефон">
+            <input name="email" required type="email" placeholder="Ваш E-mail">
+            <button class="button button_subbmit">заказать кОНСУЛЬТАЦИЮ</button>
+        </form>
+    </div>
+    <div class="modal modal_thanks" id="thanks" >
+        <div class="modal__close">&times;</div>
+        <div class="modal__subtitle">Спасибо за вашу заявку!</div>
+        <div class="modal__desc">Наш менеджер свяжется с вами в ближайшее время!</div>
+    </div>
 
+</div>
 
 
 

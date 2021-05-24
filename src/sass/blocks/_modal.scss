@@ -1,0 +1,49 @@
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.56);
+}
+.modal {
+    position: absolute;
+    padding: 35px 40px 40px 40px;
+    border-radius: 5px;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -50%);
+    width: 382px;
+    min-height: 402px;
+    background: #F2F2F2;
+    text-align: center;
+    &__close {
+        position: absolute;
+        width: 21px;
+        height: 21px;
+        left: 402px;
+        top: -27px;
+        font-size: 50px;
+        color: $main-color;
+    }
+    &__subtitle {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 19px;
+        color: #0D0D0D;
+    }
+    &__desc {
+        margin-top: 10px;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 14px;
+        color: #0D0D0D;
+    }
+    &_thanks {
+        min-height: 143px;
+    }
+}
+
+#consultation, #order, #thanks {
+    display: none;
+}
