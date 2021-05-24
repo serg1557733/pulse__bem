@@ -25,6 +25,7 @@
         top: -27px;
         font-size: 50px;
         color: $main-color;
+        cursor: pointer;
     }
     &__subtitle {
         font-weight: 700;
@@ -44,6 +45,6 @@
     }
 }
 
-#consultation, #order, #thanks {
+.overlay, #consultation, #order, #thanks {
     display: none;
 }

@@ -51,13 +51,30 @@ $(document).ready(function(){
     });
     })(jQuery);
 
-  $('.catalog-item__link').each(function(i){
+  $('.catalog-item__link').each(function(i)
+  {
       $(this).on('click',function(e) {
           e.preventDefault();
           $('.catalog-item__content').eq(i).toggleClass('catalog-item__content_active');
           $('.catalog-item__list').eq(i).toggleClass('catalog-item__list_active');    
-      })
+      });
     });
+  
+  $('[data-modal=consultation]').on('click', function() {
+          $('.overlay, #consultation').fadeIn('slow');
+      });
+      $('.modal__close').on('click', function(){
+        $('.overlay, #consultation, #order, #thanks').fadeOut('');
+    });
+
+
+  $('.catalog-item__btn').each(function (i){
+      $(this).on('click', function(){
+        $('#order .modal__desc').text($('.catalog-item__subtitle').eq(i).text());
+          $('.overlay, #order').fadeIn('slow');
+          });
+  });
+
 
     
     
