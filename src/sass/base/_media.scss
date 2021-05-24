@@ -69,6 +69,19 @@
             }
         }
     }
+    .review {
+        &__cards {
+            flex-direction: column;
+        }
+    &__img {
+        margin: 0 auto;
+        margin-bottom: 15px;
+    }
+    &__subheader {
+            font-size: 25px;
+    }  
+
+    }
 }
 
     

@@ -1,0 +1,31 @@
+.review {
+    &__subheader {
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 30px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #0D0D0D;
+    }
+    &__cards {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 60px;
+    }
+    &__name {
+        font-weight: 700;
+        font-size: 18px;
+        color: #0D0D0D;
+    }
+    &__text {
+        margin-left: 59px;
+        span {
+            font-weight: 500;
+            font-size: 14px;
+            color: #646464;
+        }
+    }
+    &__desc {
+        margin-top: 10px;
+    }
+}
