@@ -32,6 +32,17 @@
     .tns-nav {
         display: none;
     }
+    .carousel {
+      &__inner{
+        width: 100%;
+        height: 100%;
+      }  
+    }
+    .catalog {
+        &__content {
+            justify-content: center;
+        }
+    }
 }
 @media (max-width: 767px) {
     .advantage {
@@ -53,7 +64,9 @@
     .carousel {
         padding:61px 0;
         &__inner {
-            width: 50%;
+            img {
+            width: 100%;
+            }
         }
     }
 }
@@ -69,14 +82,20 @@
         }
         &__official {
             width: 33%;
-        }
-        &__official {
             font-size: 10px;
             span {
                 font-size: 12px;
                 margin-top: 10px;
             }
         }
+    }
+    .catalog {
+        &__tab {
+            width: 150px;
+            height: 48px;
+            margin: 0 7px;
+            font-size: 13px;
+            }
     }
     .promo {
         &__header {
@@ -175,6 +194,19 @@
         &_left {
             font-size: 20px;
             margin-top: 10px;
+        }
+    }
+    .catalog {
+        &__tabs {
+            flex-direction: column;
+            margin-top: 19px;
+        }
+        &__tab {
+            margin-top: 8px;
+            transform: skewX(0deg);
+            div {
+                transform: skewX( 0deg);
+            }
         }
     }
 }

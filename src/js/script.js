@@ -1,4 +1,4 @@
-/* $(document).ready(function(){
+$(document).ready(function(){
     $('.carousel__inner').slick({
         infinite: true,
         speed: 1100,
@@ -12,14 +12,14 @@
               breakpoint: 992,
               settings: {
                 arrows: false,
-                dots: true
+                dots: false
               }
             }
         ]
       });
-  }); */
+  });
 
-const slider = tns({
+/* const slider = tns({
     container: '.carousel__inner',
     items: 1,
     slideBy: 'page',
@@ -37,7 +37,7 @@ const slider = tns({
       900: {
         controls: true,      }
     }
-  });
+  }); */
 
   (function($) {
     $(function() {
