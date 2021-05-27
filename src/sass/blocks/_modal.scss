@@ -43,7 +43,15 @@
     &_thanks {
         min-height: 143px;
     }
+    input.error {
+        border: 1px solid red;   
+    }
+    label.error {
+        border: none;
+        text-align: center;
+    }
 }
+
 
 .overlay, #consultation, #order, #thanks {
     display: none;

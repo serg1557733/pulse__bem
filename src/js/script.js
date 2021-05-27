@@ -72,10 +72,58 @@ $(document).ready(function(){
       $(this).on('click', function(){
         $('#order .modal__desc').text($('.catalog-item__subtitle').eq(i).text());
           $('.overlay, #order').fadeIn('slow');
-          });
-  });
+         
+        });
+ 
+  $('#order form').validate({
+      rules: {
+        name: "required",
+        phone:"required",
+        email: {required: true,
+          email: true
+        }
+      },
+      messages: {
+        name: "Введите ваше имя",
+        phone:"Введите верно ваш номер телефона",
+        email: { required: "Введите свою почту",
+                  email: "Проверте правильность ввода адреса"},
+      },
+      });
+  $('#consultation form').validate({
+    rules: {
+      name: "required",
+      phone:"required",
+      email: {required: true,
+        email: true
+      }
+    },
+    messages: {
+      name: "Введите ваше имя",
+      phone:"Введите верно ваш номер телефона",
+      email: { required: "Введите свою почту",
+                email: "Проверте правильность ввода адреса"},
+    },
+    });
+  $('#cons-form' ).validate({
+      rules: {
+        name: "required",
+        phone:"required",
+        email: {required: true,
+          email: true
+        }
+      },
+      messages: {
+        name: "Введите ваше имя",
+        phone:"Введите верно ваш номер телефона",
+        email: { required: "Введите свою почту",
+                  email: "Проверте правильность ввода адреса"},
+      },
+      });
 
+});
 
+ 
     
     
 
