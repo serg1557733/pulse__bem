@@ -120,6 +120,8 @@ $(document).ready(function(){
                   email: "Проверте правильность ввода адреса"},
       },
       });
+  
+  $('input[name=phone]').mask("+380(99)999-9999");
 
 });
 
