@@ -11,10 +11,10 @@ $mail->CharSet = 'utf-8';
 // $mail->SMTPDebug = 3;                               // Enable verbose debug output
 
 $mail->isSMTP();                                      // Set mailer to use SMTP
-$mail->Host = 'smtp.ukr.net';  // Specify main and backup SMTP servers
+$mail->Host = 'smtp.ukr.net';  // Specify main and backup SMTP servershttps://github.com/serg1557733/pulse__bem/blob/master/src/mailer/smart.php
 $mail->SMTPAuth = true;                               // Enable SMTP authentication
-$mail->Username = 'serg1557733';                 // Наш логин
-$mail->Password = 'serg150285';                           // Наш пароль от ящика
+$mail->Username = '';                 // Наш логин
+$mail->Password = '';                           // Наш пароль от ящика
 $mail->SMTPSecure = 'ssl';                            // Enable TLS encryption, `ssl` also accepted
 $mail->Port = 465;                                    // TCP port to connect to
  
