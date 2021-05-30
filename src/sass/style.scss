@@ -8,6 +8,7 @@
     max-width: 950px;
     margin: 0 auto;
 }
+@import 'base/animations';
 @import 'blocks/promo';
 @import 'blocks/header';
 @import 'blocks/buttons';
@@ -20,4 +21,5 @@
 @import 'blocks/review';
 @import 'blocks/footer';
 @import 'blocks/modal';
+@import 'blocks/arrow-up';
 @import 'base/media';

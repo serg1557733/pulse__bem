@@ -123,7 +123,43 @@ $(document).ready(function(){
   
   $('input[name=phone]').mask("+380(99)999-9999");
 
+  $('form').submit(function(e) {
+      e.preventDefault ();
+      $.ajax ({
+         type: "POST",
+         url: "mailer/smart.php",
+         data: $(this).serialize()
+      }).done(function(){
+          $(this).find("input").val("");
+
+
+          $('form').trigger('reset');
+      });
+      return false;
+  });
+
+  //Scroll and page up
+
+$(window).scroll(function(){
+  if ($(this).scrollTop()>1600)
+  {
+    $('.arrow-up').fadeIn();
+  }
+  else
+  $('.arrow-up').fadeOut();
+
 });
+
+  $("a[href=#up]").click(function(){
+  const _href = $(this).attr("href");
+  $("html, body").animate({scrollTop: $(_href).offset().top+"px"});
+  return false;
+});
+
+});
+new WOW().init();
+
+
 
  
     
